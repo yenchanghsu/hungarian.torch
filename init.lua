@@ -1,6 +1,6 @@
 hungarian = require 'libhungarian'
 
-hungarian.minCost = function(costMat)
+function hungarian.minCost(costMat)
   
   assert(torch.isTensor(costMat),'input matrix should be torch tensor')
   assert(costMat:min()>=0,'cost should >=0')
@@ -27,6 +27,13 @@ hungarian.minCost = function(costMat)
   inds:maskedFill(inds:gt(w),0)
   
   return inds
+end
+
+function hungarian.maxCost(costMat)
+  local mat = costMat:clone()
+  local max_val = mat:max()
+  mat:mul(-1):add(max_val)
+  return hungarian.minCost(mat)
 end
 
 return hungarian
