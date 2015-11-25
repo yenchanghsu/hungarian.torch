@@ -4,6 +4,8 @@ Wrapping c implementation of Hungarian algorithm (or Munkres assignment algorith
 
 The c code comes from [Cyrill Stachniss's work](http://www2.informatik.uni-freiburg.de/~stachnis/misc/libhungarian-v0.1.3.tgz)
 
+## Benchmark ##
+Compute 1000x1200 matrix only takes 0.28s with Intel 4790K
 
 ## Installation ##
 
