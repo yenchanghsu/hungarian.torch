@@ -16,7 +16,7 @@ luarocks install hungarian
 
 Or from local source:
 ```
-luarocks make hungarian-scm-1.rockspec
+luarocks make hungarian.torch/hungarian-scm-1.rockspec
 ```
 
 ## Usage ##
