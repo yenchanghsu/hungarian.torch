@@ -9,12 +9,7 @@ Compute 1000x1200 matrix only takes 0.28s with Intel 4790K
 
 ## Installation ##
 
-Install from server:
-```
-luarocks install hungarian
-```
-
-Or from local source:
+Install from local source:
 ```
 luarocks make hungarian.torch/hungarian-scm-1.rockspec
 ```
