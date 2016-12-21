@@ -1,5 +1,5 @@
 package = "hungarian"
-version = "scm-1"
+version = "1.0.0"
 
 source = {
    url = "git://github.com/yenchanghsu/hungarian.torch.git",
