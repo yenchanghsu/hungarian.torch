@@ -479,7 +479,7 @@ static int solver(lua_State *L)
   hungarian_free(&p);
 
   int idx;
-  for (idx=0; idx < 4; idx+=1) {
+  for (idx=0; idx < h; idx+=1) {
     free(m[idx]);
   }
   free(m);
